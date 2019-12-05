@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ToDOM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <div class="app">
+      <h1>Todo</h1>
+        <section>
+          <label for="todo-input">Add to your todo list!</label>
+          <input class="todo-input "type="text" name="todo-input">
+          <label for="priority">Priority:</label>
+          <select class="priority" name="priority">
+            <option value="1">Low</option>
+            <option value="2">High</option>
+          </select>
+          <button class="add-todo">ADD</button>
+        </section>
+        <section>
+          <button class="toggle-priorities">Show Priorities</button>
+          <button class="hide-complete">Hide Complete</button>
+          <button class="hide-low-priority">Hide Low Priority</button>
+          <button class="high-priority-first">High Priority First</button>
+          <button class="complete-last">Complete Last</button>
+        </section>
+      <ol class="todo-list"></ol>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./todos.js"></script>
+    <script src="./add-todo.js"></script>
+    <script src="./remove-todo.js"></script>
+    <script src="./print-todo.js"></script>
+    <script src="./print-todos.js"></script>
+    <script src="./clear-todos.js"></script>
+    <script src="./refresh-todos.js"></script>
+    <script src="./add-button-controller.js"></script>
+    <script src="./toggle-priorities-button-controller.js"></script>
+    <script src="./hide-complete-button-controller.js"></script>
+    <script src="./hide-low-priority-button-controller.js"></script>
+    <script src="./high-priority-first-button-controller.js"></script>
+    <script src="./complete-last-button-controller.js"></script>
+  </body>
+</html>
